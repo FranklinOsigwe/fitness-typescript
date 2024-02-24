@@ -28,10 +28,10 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
         {isAboveMediumScreens ?    (
         <div className='flex items-center justify-between w-full'> 
             <div className='flex items-center justify-between gap-8 text-sm'>
-             <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page='Home'/>
-              <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page='Benefits'/>
-              <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page='Our Classes'/>
-              <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page='Contact Us'/>
+             <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={SelectedPage.Home}/>
+              <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={SelectedPage.Benefits}/>
+              <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={SelectedPage.OurClasses}/>
+              <Link selectedPage={selectedPage} setSelectedPage={setSelectedPage} page={SelectedPage.ContactUs}/>
             </div>
             <div className='flex justify-between gap-8'>
               <p>Sign In</p>
